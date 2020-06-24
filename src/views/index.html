@@ -5,64 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>ホーム</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
+        <p class="page-title">
+            <a class="link" href="/">
+                ts express
+            </a>
+        </p>
         <nav>
             <ol>
-                <li><a href="/">ホーム</a></li>
-                <li><a href="">新着ニュース</a></li>
-                <li><a href="#rakuscal">ラクスカル</a></li>
-                <li><a href="/contact" target="_blank">お問い合わせ</a></li>
+                <li><a class="nav-link" href="/">about</a></li>
+                <li><a class="nav-link" href="/news">news</a></li>
+                <li><a class="nav-link" href="/layouts">layouts</a></li>
+                <li><a class="nav-link" href="/contact" target="_blank">contact</a></li>
             </ol>
         </nav>
-
     </header>
-    <main>
-        <article>
-            <h1>HelloWorld</h1>
-            <p>おはようございます、<ruby>
-                    世界
-                    <rt>ワールド</rt>
-                </ruby>。</p>
-            <figure id="rakuscal">
-                <img src="/images/rakuscal_clear.png" alt="ラ●スカルくん">
-                <figcaption>
-                    <details>
-                        <summary>
-                            このキャラクターについて
-                        </summary>
-                        <dl>
-                            <dt>ラ●スカルくん</dt>
-                            <dd>非公認キャラクター</dd>
-                            <dd>
-                                <a href="/images/rakuscal_clear.png" download="ラ●スカルくん.png">
-                                    画像をダウンロード
-                                </a>
-                            </dd>
-                            <dd>
-                                <a href="/images/rakuscal_clear.png" target="_brank">別タブで画像を表示</a>
-                            </dd>
-                        </dl>
-                    </details>
-                </figcaption>
-            </figure>
-        </article>
-    </main>
+    <div class="container-full grid-center">
+        <div class="center">HTML CSS</div>
+        <div class="center">TypeScript</div>
+        <div class="center">Express Node.js</div>
+    </div>
     <footer>
-        <address>WRITTEN BY Yuichi</address>
-        <dl>
-            <dt>Yuichi</dt>
-            <dd>都内で働くWebエンジニアです。</dd>
-        </dl>
-        <aside>
-            補足・関連情報
-        </aside>
+        <p>created by yuichiyasui</p>
     </footer>
-    <script src="javascripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>

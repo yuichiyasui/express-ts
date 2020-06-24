@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テーブルレイアウト</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/layouts/table.css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>テーブルレイアウト</h1>
+            <h2>通常のテーブル</h2>
+            <table>
+                <caption>プランの比較</caption>
+                <tr>
+                    <th colspan="2">プラン</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">サーバー</th>
+                    <th>利用料金</th>
+                    <td>100円/月</td>
+                    <td>500円/月</td>
+                    <td>800円/月</td>
+                </tr>
+                <tr>
+                    <th>容量</th>
+                    <td>10GB</td>
+                    <td>100GB</td>
+                    <td>500GB</td>
+                </tr>
+            </table>
+
+            <hr>
+            <h2>scope属性を用いたテーブル</h2>
+            <table>
+                <caption>プランの比較</caption>
+                <tr>
+                    <th scope="row">プラン</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <th>利用料金</th>
+                    <td>100円/月</td>
+                    <td>500円/月</td>
+                    <td>800円/月</td>
+                </tr>
+                <tr>
+                    <th>容量</th>
+                    <td>10GB</td>
+                    <td>100GB</td>
+                    <td>500GB</td>
+                </tr>
+            </table>
+            <hr>
+            <h2>headers属性を用いたテーブル</h2>
+            <table>
+                <caption>プランの比較</caption>
+                <tr>
+                    <th id="plan">プラン</th>
+                    <th id="plan-a" headers="plan">A</th>
+                    <th id="plan-b" headers="plan">B</th>
+                    <th id="plan-c" headers="plan">C</th>
+                </tr>
+                <tr>
+                    <th id="price">利用料金</th>
+                    <td headers="plan-a price">100円/月</td>
+                    <td headers="plan-b price">500円/月</td>
+                    <td headers="plan-c price">800円/月</td>
+                </tr>
+                <tr>
+                    <th id="capacity">容量</th>
+                    <td headers="plan-a capacity">10GB</td>
+                    <td headers="plan-b capacity">100GB</td>
+                    <td headers="plan-c capacity">500GB</td>
+                </tr>
+            </table>
+            <hr>
+            <h2>列のグループ</h2>
+            <table>
+                <caption>プランの比較</caption>
+                <colgroup></colgroup>
+                <colgroup span="3"></colgroup>
+                <tr>
+                    <th>プラン</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <th>利用料金</th>
+                    <td>100円/月</td>
+                    <td>500円/月</td>
+                    <td>800円/月</td>
+                </tr>
+                <tr>
+                    <th>容量</th>
+                    <td>10GB</td>
+                    <td>100GB</td>
+                    <td>500GB</td>
+                </tr>
+            </table>
+            <hr>
+            <h2>行のグループ</h2>
+            <table id="rowgroup-table">
+                <caption>プランの比較</caption>
+                <thead>
+                    <tr>
+                        <th>プラン</th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>利用料金</th>
+                        <td>100円/月</td>
+                        <td>500円/月</td>
+                        <td>800円/月</td>
+                    </tr>
+                    <tr>
+                        <th>容量</th>
+                        <td>10GB</td>
+                        <td>100GB</td>
+                        <td>500GB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>総合評価</th>
+                        <td>★★</td>
+                        <td>★★★★★</td>
+                        <td>★★★★</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+            <h2>border-collapseを設定したボーダーの重ね合わせ</h2>
+            <table id="border-collapse-table">
+                <caption>プランの比較</caption>
+                <tr>
+                    <th colspan="2">プラン</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">サーバー</th>
+                    <th>利用料金</th>
+                    <td>100円/月</td>
+                    <td>500円/月</td>
+                    <td>800円/月</td>
+                </tr>
+                <tr>
+                    <th>容量</th>
+                    <td>10GB</td>
+                    <td>100GB</td>
+                    <td>500GB</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+
+    <a href="/layouts">レイアウト集に戻る</a>
+</body>
+
+</html>

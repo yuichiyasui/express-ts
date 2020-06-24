@@ -1,0 +1,43 @@
+h1 {
+    border-left: solid 5px grey;
+    border-bottom: solid 2px grey;
+    padding-left: 14px;
+    padding-bottom: 2px;
+}
+
+.container {
+    width: 80vw;
+    min-height:70vh;
+    margin: 2rem auto;
+}
+.flex-container {
+    background-color: lavender;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main {
+    flex: 2 0 auto;
+    padding: 16px;
+    background-color: aqua;
+    display: inline-block;
+    margin-left:10px ;
+    margin-right:10px ;
+}
+
+h2 {
+    border-left: solid thick orange;
+    padding-left: 16px;
+}
+
+
+/** プロフィール */
+aside.profile {
+    flex: 1 0 auto;
+    padding: 16px;
+    background-color: chartreuse;
+    display: inline-block;
+    margin-left:10px ;
+    margin-right:10px ;
+}

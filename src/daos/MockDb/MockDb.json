@@ -1,1 +1,6 @@
-{"users":[{"name":"Yasui","email":"yasui@gmail.com","id":748085630723},{"name":"Yamada","email":"yamada@gmail.com","id":521874381024}]}
+{
+  "users": [
+    { "name": "Yasui", "email": "yasui@gmail.com", "id": 748085630723 },
+    { "name": "Yamada", "email": "yamada@gmail.com", "id": 521874381024 }
+  ]
+}

@@ -1,0 +1,32 @@
+.container {
+    width:100%;
+    display: grid;
+    grid-template-rows: 125px 100px 75px;
+    grid-template-columns:1fr 1fr 1fr; 
+    grid-gap:5px;
+}
+div {
+    color:white;
+}
+.boxA {
+    background-color: coral;
+    grid-row-start:2;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+.boxB {
+    background-color:blueviolet;
+}
+.boxC {
+    background-color:blue;
+}
+.boxD {
+    background-color: darkgreen;
+}
+.boxE {
+    background-color:gold;
+}
+.boxF {
+    background-color: red;
+}

@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ニュース一覧</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/common.css">
 </head>
+
 <body>
-    <div id="list"></div>
+    <header>
+        <p class="page-title">
+            <a class="link" href="/">
+                ts express
+            </a>
+        </p>
+        <nav>
+            <ol>
+                <li><a class="nav-link" href="/">about</a></li>
+                <li><a class="nav-link" href="/news">news</a></li>
+                <li><a class="nav-link" href="/layouts">layouts</a></li>
+                <li><a class="nav-link" href="/contact" target="_blank">contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div class="container bg-white p-2">
+        <div id="list"></div>
+    </div>
+    
+    <footer>
+        <p>created by yuichiyasui</p>
+    </footer>
     <template>
         <article>
             <a>
                 <img alt="">
-                <h2></h2>
+                <h2>タイトル
+                </h2>
             </a>
         </article>
     </template>
     <script>
-        
+        var postdata = [{
+            "url": "/",
+            "img": "/images/rakuscal_clear.png",
+            "title": "ラ●スカルについて1"
+        },
+        {
+            "url": "/",
+            "img": "/images/rakuscal_clear.png",
+            "title": "ラ●スカルについて2"
+        }];
+        if ('content' in document.createElement('template')) {
+            var temp = document.querySelector('template').content;
+            postdata.forEach((data) => {
+                temp.querySelector('a').href = data.url;
+                temp.querySelector('a').className = 'link-black'
+                temp.querySelector('img').src = data.img;
+                temp.querySelector('h2').textContent = data.title;
+
+                var clone = document.importNode(temp, true)
+                document.querySelector('#list').appendChild(clone)
+            })
+        } else {
+            document.write('テンプレートに未対応です')
+        }
+
     </script>
+    <noscript>
+        JavaScriptを実行することができません。
+    </noscript>
 </body>
+
 </html>

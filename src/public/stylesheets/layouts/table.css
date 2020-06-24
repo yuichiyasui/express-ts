@@ -1,0 +1,41 @@
+table {
+    border: solid 2px #abcf3e;
+}
+#border-collapse-table {
+    border: solid 2px #abcf3e;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+th {
+    padding: 10px 20px;
+    border: solid 2px #5ca8ee;
+}
+
+td {
+    padding: 10px 20px;
+    border: solid 2px #ff8e52;
+}
+
+colgroup:nth-of-type(1){
+    background:#f3c90b;
+}
+
+colgroup:nth-of-type(2){
+    background:#e1f89b;
+}
+
+#rowgroup-table > thead {
+    background: #f3c90b;
+}
+
+#rowgroup-table > tbody {
+    background: #e1f89b;
+}
+
+#rowgroup-table > tfoot {
+    background: #f8a379;
+}

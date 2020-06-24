@@ -1,0 +1,20 @@
+.min-height {
+    min-height: 57vh;
+}
+
+/** お問合せページ */
+aside.calender {
+    background-color: chartreuse;
+    width: 350px;
+}
+
+aside.calender ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+aside.calender ul>li {
+    flex: 1;
+    text-align: center;
+}

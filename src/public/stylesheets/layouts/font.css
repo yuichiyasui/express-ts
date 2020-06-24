@@ -1,0 +1,153 @@
+h1 {
+    border-left: solid 5px grey;
+    border-bottom: solid 2px grey;
+    padding-left: 14px;
+    padding-bottom: 2px;
+}
+
+.container {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+.font-family {
+    font-size: x-large;
+    font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
+
+.font-variant {
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.line-height {
+    border-left: dotted 8px olive;
+    padding-left: 32px;
+    line-height: 3;
+}
+
+.text-align {
+    text-align: center;
+    border: solid 1px olive;
+}
+
+.text-container {
+    border: solid 1px olive;
+    display: flex;
+    flex: 1 1 1;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 30px;
+}
+
+.vertical-align-top {
+    border: solid 1px olive;
+    line-height: 100px;
+    flex: 1 0 auto;
+    vertical-align: top;
+}
+
+.vertical-align-top img {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    border: solid 1px olive;
+    line-height: 100px;
+    flex: 1 0 auto;
+}
+
+.vertical-align-middle img {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    border: solid 1px olive;
+    line-height: 100px;
+    flex: 1 0 auto;
+    vertical-align: bottom;
+}
+
+.vertical-align-bottom img {
+    vertical-align: bottom;
+}
+
+.white-space {
+    white-space: pre-line;
+}
+
+.overflow {
+    width: 400px;
+    padding: 1rem;
+    border: solid 2px olive;
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.letter-spacing {
+    letter-spacing: 15px;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 2px #aaa;
+    font-size: 20px;
+}
+
+.-webkit-text-stroke {
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.columns {
+    columns: 2;
+    width: 800px;
+    border: solid 6px olive;
+    padding: 1rem;
+    column-gap: 2rem;
+    column-rule: dashed 1px olive;
+}
+
+.columns>h2 {
+    margin-top: 0;
+    column-span: all;
+}
+
+.columns>p {
+    margin-top: 0;
+}
+
+.writing-mode {
+    writing-mode: vertical-rl;
+    height: 300px;
+    border: solid 2px olive;
+    padding: 2rem;
+    text-orientation: upright;
+}
+
+.writing-mode span {
+    text-combine-upright: all;
+    background-color: darkgoldenrod;
+    color: white;
+    padding:0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}

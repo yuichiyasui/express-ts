@@ -50,12 +50,33 @@ const viewsDir = path.join(__dirname, 'views');
 app.set('views', viewsDir);
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
+
 app.get('/', (req: Request, res: Response) => {
   res.sendFile('index.html', { root: viewsDir });
 });
+
 app.get('/news', (req: Request, res: Response) => {
   res.sendFile('news.html', { root: viewsDir });
 });
+app.get('/layouts', (req: Request, res: Response) => {
+  res.sendFile('layouts.html', { root: viewsDir });
+});
+app.get('/layouts/flex', (req: Request, res: Response) => {
+  res.sendFile('/layouts/flex.html', { root: viewsDir });
+});
+app.get('/layouts/table', (req: Request, res: Response) => {
+  res.sendFile('/layouts/table.html', { root: viewsDir });
+});
+app.get('/layouts/grid', (req: Request, res: Response) => {
+  res.sendFile('/layouts/grid.html', { root: viewsDir });
+});
+app.get('/layouts/font', (req: Request, res: Response) => {
+  res.sendFile('/layouts/font.html', { root: viewsDir });
+});
+app.get('/layouts/embedded-content', (req: Request, res: Response) => {
+  res.sendFile('/layouts/embedded_content.html', { root: viewsDir });
+});
+
 app.get('/contact', (req: Request, res: Response) => {
   res.sendFile('contact.html', { root: viewsDir });
 });
