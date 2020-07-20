@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url(../images/isometropolis.jpg);
+    position: relative;
 }
 
 /** ヘッダー */
@@ -23,7 +24,7 @@ header {
 }
 
 .link-black {
-    color:black;
+    color: black;
     text-decoration: none;
 }
 
@@ -50,7 +51,7 @@ header li {
 /** メインコンテンツ */
 .container {
     width: 80vw;
-    margin: 2rem auto;
+    margin: 2rem auto 6.5rem;
 }
 
 .p-1 {
@@ -75,5 +76,8 @@ footer {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
