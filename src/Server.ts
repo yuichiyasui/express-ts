@@ -76,6 +76,9 @@ app.get('/layouts/font', (req: Request, res: Response) => {
 app.get('/layouts/embedded-content', (req: Request, res: Response) => {
   res.sendFile('/layouts/embedded_content.html', { root: viewsDir });
 });
+app.get('/layouts/effects', (req: Request, res: Response) => {
+  res.sendFile('/layouts/effects.html', { root: viewsDir });
+});
 
 app.get('/contact', (req: Request, res: Response) => {
   res.sendFile('contact.html', { root: viewsDir });

@@ -1,0 +1,52 @@
+h1 {
+    border-left: solid 5px grey;
+    border-bottom: solid 2px grey;
+    padding-left: 14px;
+    padding-bottom: 2px;
+}
+
+.container {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+.dd-translate {
+    height: 2rem;
+    width: 4rem;
+    background-color: darkgoldenrod;
+    color: white;
+    transform: translate(4rem, 2rem);
+}
+
+.dd-scale {
+    height: 2rem;
+    width: 4rem;
+    background-color: darkolivegreen;
+    color: white;
+    transform: translate(12rem, 1rem) scale(2, 2);
+}
+
+.dd-rotate {
+    height: 2rem;
+    width: 4rem;
+    background-color: darkslateblue;
+    color: white;
+    transform: translate(30rem, 1rem) rotate(30deg);
+}
+
+.dd-skew {
+    height: 2rem;
+    width: 4rem;
+    background-color: darkblue;
+    color: white;
+    transform: translate(22rem, -4rem) skew(30deg, 0deg);
+}
+
+.ddd-transform {
+    display: block;
+    transform: translate3d(19rem, 0rem, 5rem) rotate3d(2, 2, 0, 63deg);
+}
